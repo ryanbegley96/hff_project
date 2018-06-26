@@ -1,7 +1,25 @@
 import numpy as np
 import math
 import matplotlib.pyplot as plt
+import hff_functions as hf
 
+hf.aper_diameter("Abell370/hff_abell370_f105w_aperture_data_star2.csv",7,70,3.,"f105w")
+hf.aper_diameter("Abell370/hff_abell370_f125w_aperture_data_star2.csv",7,70,5.,"f125w")
+hf.aper_diameter("Abell370/hff_abell370_f140w_aperture_data_star2.csv",7,70,5.,"f140w")
+hf.aper_diameter("Abell370/hff_abell370_f160w_aperture_data_star2.csv",7,70,5.,"f160w")
+hf.aper_diameter("Abell370/hff_abell370_f435w_aperture_data_star2.csv",8,80,0.03,"f435w")
+hf.aper_diameter("Abell370/hff_abell370_f606w_aperture_data_star2.csv",7,80,0.25,"f606w")
+hf.aper_diameter("Abell370/hff_abell370_f814w_aperture_data_star2.csv",7,80,0.8,"f814w")
+
+
+
+
+
+
+
+
+
+"""
 #abell370_f105w_aper_data w/ x&y being aperture radius & aper sum
 abell370_f105w_aper_data_x, abell370_f105w_aper_data_y = np.loadtxt("Abell370/hff_abell370_f105w_aperture_data.csv", delimiter=",", unpack=True)
 
@@ -23,3 +41,4 @@ plt.plot(abell370_f105w_aper_data_x, abell370_f105w_aper_data_y, linewidth=1, ma
 plt.plot(abell370_f105w_aper_data_x_fit, abell370_f105w_aper_data_y_fit, linewidth=1)
 plt.title("Aperture radius against aperture Flux")
 plt.show()
+"""
